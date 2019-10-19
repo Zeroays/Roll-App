@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="./flip.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <div class="add-res">
+                    <label for="food-add">Add a Restaurant</label>
+                    <input type="text" name="add_choice" id="food-add">
+                    <input type="button" value="Add" id="add_choice" onclick="add()">
+                </div>
+                <div class="pick-res">
+                    <p>List of Restaurants:</p>
+                    <ul id="food-choices">  
+                    </ul>
+                </div>
+                <div class="btn-roll">
+                    <input type="button" value="Click to Roll" id="roll" onclick="roll()">
+                </div>
+            </div>
+            <div class="back">
+                <div id="result">Result</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

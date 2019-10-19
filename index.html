@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eating App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="add-res">
+            <label for="food-add">Add a Restaurant</label>
+            <input type="text" name="add_choice" id="food-add" required/>
+            <input type="button" value="Add" id="add_choice" onclick="add()">
+        </div>
+        <div class="pick-res">
+            <p>List of Restaurants:</p>
+            <ul id="food-choices">  
+            </ul>
+        </div>
+        <div class="btn-roll">
+            <input type="button" value="Click to Roll" id="roll" onclick="roll()">
+        </div>
+    </div>
+    <div id="result">Result</div>
+    <input type="button" value="Stop" onclick="stopRolls(this)">
+    <script src="./js/main.js"></script>
+    <script src="./js/buttons.js"></script>
+    <script src="./js/helper.js"></script>
+</body>
+</html>

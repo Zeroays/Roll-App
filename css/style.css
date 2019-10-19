@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pick-res {
+    font-size: 2vw;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 25%;
+    padding: 10px;
+}
+
+li:before {
+   content: ">>";
+}
+
+#result {
+    background-color: rgba(3, 145, 3, 0.603);
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+}
+
+#food-choices li span{
+    margin: 20px;
+}
